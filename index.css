@@ -238,3 +238,147 @@ header::before{
     font-size: 1.1rem;
     letter-spacing: 0.1rem;
 }
+
+
+@media screen and (max-width: 1200px){
+    main{
+        width: 90%;
+        height: 90vh;
+        margin: 5vh auto;
+    }
+
+    .design-area h2::before{
+        top: -38px;
+        left: 140px;
+    }
+} 
+
+@media screen and (max-width: 900px){
+    main{
+        /* background: rgb(255,143,96); */
+        width: 80%;
+        height: 90vh; 
+        margin: 5vh auto;
+    }
+
+    header{
+        height: 10vh;
+    }
+
+    .form-area{
+        margin-top: 140px;
+        margin-left: 50px;
+    }
+
+    .design-area::before{
+        content: url(./images/helmet2.svg);
+        position: absolute;
+        top: -280px;
+        left: -25px; 
+    }
+
+    .design-area{
+        margin-top: 350px;
+    } 
+    
+    .design-area h2{
+        margin: 0 0 0 80px;
+        font-size: 0.9rem;
+    }
+    
+    
+    .design-area h2::before{
+        position: absolute;
+        content: url(./images/Quotemarks\ right2.svg);
+        top: -20px;
+        left: 120px;
+    }
+  
+    .design-area h3{
+        margin: 5px 0 0 98px;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    main{
+        background: rgb(255,143,96);
+        background: linear-gradient(0deg, rgba(255,143,96,1) 20%, rgba(255,255,255,1) 20%); 
+        width: 100%;
+        height: 90vh; 
+        margin: 5vh auto;
+    }
+
+    .showcase{
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+
+
+    .form-area{
+        margin: 130px 0 0 100px;
+    }
+    
+    .form-area::before{
+        
+        left: 100px;
+    
+    }
+  
+    .sign-in,  .sign-up{
+        height: 35px;
+    }
+    
+    .sign-in::after{
+        height: 40px;
+        top: 38px;
+    }
+    
+    .contact-area{
+        display: grid;
+        grid-template-columns: 250px;
+        margin-top: 40px;
+        
+    }
+    
+    .contact-area input{
+        width: 200px;
+        height: 30px;
+        font-size: 0.6rem;
+    }
+    
+    .btn1{
+        font-size: 0.85rem;
+        margin: 30px 0 0 30px;
+        width: 140px;
+        height: 40px;
+    }
+    
+    
+    .btn1::after, .btn1::before{
+        width: 150px;
+        height: 40px;
+    }
+
+    .design-area{
+        margin-top: 60px;
+    }
+    
+    .design-area::before{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .form-area{
+        margin: 150px 0 0 60px;
+    }
+
+    .design-area{
+        margin-top: 140px;
+    }
+
+}
