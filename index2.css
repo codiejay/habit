@@ -114,6 +114,7 @@ label input {
     width: 25px;
     background-color: #eee;
     border: 1px solid #868686;
+    
   }
   
   /* On mouse-over, add a grey background color */
@@ -125,6 +126,7 @@ label:hover input ~ .chack-mark{
 label input:checked ~ .chack-mark{
     background-color: #E88D67;
     border: none;
+    transition: 1s;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */
@@ -144,34 +146,35 @@ label .chack-mark::after{
     content: url(./images/Vector\ 1.svg);
     top: 0;
     left: -5px;
+    transform: scale(1.);
   }
 
-  .showcase p:nth-child(2){
-      text-align: center;
-      font-weight: lighter;
-      margin-top: 10px;
-      text-transform: uppercase;
+.showcase p:nth-child(2){
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 10px;
+    text-transform: uppercase;
   }
 
-  .circle{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-     margin-top: 15px;
+.circle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15px;
   }
 
-  .circle p:nth-child(1){
-      background-color: #E88D67;
-      border-radius: 100%;
-      width: 40px;
-      height: 40px;
-      font-size: 1.2rem;
-      color: white;
-      padding: 5px 0 0 10px;
-      margin: 10px 0 0 0;
+.circle p:nth-child(1){
+    background-color: #E88D67;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    color: white;
+    padding: 5px 0 0 10px;
+    margin: 10px 0 0 0;
   }
 
-  .circle p:nth-child(2){
+.circle p:nth-child(2){
     background-color: #ece7e7;
     border: 1px solid rgb(65, 65, 65);
     border-radius: 100%;
