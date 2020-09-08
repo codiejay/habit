@@ -1,0 +1,240 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #E88D67;
+}
+
+main{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,143,96,1) 70%); 
+    width: 70%;
+    height: 90vh;
+    margin: 5vh auto;
+}
+
+header{
+    height: 15vh;
+    position: relative;
+    top: 20px;
+}
+
+header h2{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: normal;
+    margin-left: 100px;
+    padding-top: 5px;
+    color: #3E3E3E;
+}
+
+.header-span{
+    letter-spacing: 0.05rem;
+    font-size: 0.63rem;
+    position: relative;
+    top: -15px;
+    left: 28px;
+    color:rgb(66, 65, 65);
+}
+
+header::before{
+    content: url(./images/fullLogo.svg);
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+
+.showcase{
+    /* height: 75vh; */
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.form-area{
+    width: 70%;
+    position: relative;
+    margin: 160px 0 0 100px;
+}
+
+.form-area::before{
+    content: url(./images/signInPersonIcon.svg);
+    position: absolute;
+    top: -100px;
+    left: 200px;
+
+}
+
+.btn-area{
+    display: grid;
+    grid-template-columns: 150px 150px;
+
+}
+
+.sign-in{
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    color: white;
+    background: #E88D67;
+    letter-spacing: 0.15rem;
+    font-weight: 600; 
+    box-shadow: 2px 0 5px 1px #f0d1c4;
+}
+
+.sign-in:hover{
+    background: transparent;
+    color: #E88D67;
+}
+
+.sign-in::after{
+    display: block;
+    content: '';
+    position: absolute;
+    border: 1px solid #f3a98a;
+    height: 60px;
+    left: 50px;
+    top: 43px;
+    cursor: pointer;
+}
+
+.sign-up{
+    border: 1px solid #E88D67;
+    outline: none;
+    border-radius: 50px;
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    color: #E88D67;
+    background: transparent;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    
+}
+
+.sign-up:hover{
+    background: #E88D67;
+    color: white;
+    box-shadow: 2px 0 5px 1px #f0d1c4;
+    cursor: pointer;
+}
+
+.contact-area{
+    display: grid;
+    grid-template-columns: 250px;
+    margin-top: 60px;
+    
+}
+
+.contact-area input{
+    width: 250px;
+    height: 35px;
+    margin-top: 15px;
+    border: 1px solid #E88D67;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 2px 0 2px 20px;
+    color: #2e2d2d;
+    letter-spacing: 0.2rem;
+    font-size: 0.7rem;
+}
+
+.btn1{
+    font-size: 0.95rem;
+    margin: 30px 0 0 20px;
+    position: relative;
+    border: none;
+    outline: none;
+    border-radius: 80px;
+    width: 160px;
+    height: 45px;
+    text-transform: uppercase;
+    color: white;
+    background: #E88D67;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    z-index: 3;
+    cursor: pointer;
+}
+
+
+
+.btn1::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 170px;
+    height: 45px;
+    border-radius: 80px;
+    background: rgba(248, 77, 4, 0.1);
+    top: 5px;
+    left: -10px;
+    z-index: -3;
+}
+
+.btn1::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 170px;
+    height: 45px;
+    border-radius: 80px;
+    background: rgba(248, 77, 4, 0.1);
+    top: 5px;
+    left: 0px;
+    z-index: -3;
+}
+
+.design-area{
+    margin-top: 350px;
+    position: relative;
+}
+
+.design-area::before{
+    content: url(./images/helmet.svg);
+    position: absolute;
+    top: -370px;
+    left: -30px;
+}
+
+.design-area h2{
+    color: white;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0 0 0 125px;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    position: relative;
+}
+
+
+.design-area h2::before{
+    position: absolute;
+    content: url(./images/Quotemarks\ right.svg);
+    top: -30px;
+    left: 160px;
+}
+
+.design-area h3{
+    margin: 0 0 0 148px;
+    color:  rgba(255,143,96,1); 
+    text-shadow:
+    -1px -1px 0 #fff,
+     0   -1px 0 #fff,
+     1px -1px 0 #fff,
+     1px  0   0 #fff,
+     1px  1px 0 #fff,
+     0    1px 0 #fff,
+    -1px  1px 0 #fff,
+    -1px  0   0 #fff;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}

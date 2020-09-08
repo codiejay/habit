@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #E88D67;
+}
+
+main{
+    background: white;
+    width: 50%;
+    height: 96vh;
+    margin: 2vh auto;
+}
+
+header{
+    height: 15vh;
+    position: relative;
+}
+
+header h2{
+   padding: 30px 0 0 65px; 
+   color: #868686; 
+   text-transform: capitalize;
+   font-size: 0.93rem;
+   font-weight: lighter;
+   position: relative;
+   z-index: 1;
+   line-height: 1.2rem;
+}
+
+span{
+    color: #E88D67;
+    font-weight: bold;
+}
+
+header h2::before{
+    position: absolute;
+    content: url(./images/Ellipse\ 3.svg);
+    top: 10px;
+    left: 5px;
+    z-index: -1;
+}
+
+header::after{
+    position: absolute;
+    content: url(./images/Group\ 3.svg);
+    top: 15%;
+    left: 90%;
+}
+
+.showcase {
+
+    margin-top: 20px;
+}
+
+.showcase h3{
+    text-align: center;
+    border-radius: 20px;
+    background: #E88D67;
+    color: white;
+    width: 160px;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.showcase h2{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 1.4rem;
+}
+
+.box{
+    /* width: 300px; */
+    margin: 30px 0 0 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 80px);
+    justify-content: center;
+}
+
+label{
+    font-size: 0.8rem;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    padding: 5px 0 0 0px;
+    margin-bottom: 10px;
+}
+
+/* Hide the browser's default checkbox */
+label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+.chack-mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border: 1px solid #868686;
+  }
+  
+  /* On mouse-over, add a grey background color */
+label:hover input ~ .chack-mark{
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+label input:checked ~ .chack-mark{
+    background-color: #E88D67;
+    border: none;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+.chack-mark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+label input:checked ~ .chack-mark::after{
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+label .chack-mark::after{
+    content: url(./images/Vector\ 1.svg);
+    top: 0;
+    left: -5px;
+  }
+
+  .showcase p:nth-child(2){
+      text-align: center;
+      font-weight: lighter;
+      margin-top: 10px;
+      text-transform: uppercase;
+  }
+
+  .circle{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     margin-top: 15px;
+  }
+
+  .circle p:nth-child(1){
+      background-color: #E88D67;
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+      color: white;
+      padding: 5px 0 0 10px;
+      margin: 10px 0 0 0;
+  }
+
+  .circle p:nth-child(2){
+    background-color: #ece7e7;
+    border: 1px solid rgb(65, 65, 65);
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 5px 0 0 0;
+    margin-left: 50px;
+    position: relative;
+}
+
+.circle p:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1px;
+    height: 70px;
+    background: #868686;
+    transform: rotate(35deg);
+    left: -30px;
+    top: -15px;
+}
+
+.showcase p:nth-child(4){
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-transform: capitalize;
+    font-style: italic;
+    color: rgb(138, 134, 134);
+}
